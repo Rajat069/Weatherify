@@ -2,7 +2,7 @@
 
 A simple weather app that retrieves weather information using the OpenWeather API.
 
-![screenshot of the app]("UI")
+![screenshot of the app]("https://github.com/Rajat069/Weatherify/blob/main/Resources/ui_screenshot.png","UI")
 
 ## Features
 
