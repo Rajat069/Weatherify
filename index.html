@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weatherify</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      type="image/png"
+      sizes="32x32"
+      rel="icon"
+      href="./Resources/icons8-partly-cloudy-day-32.png"
+    />
+  </head>
+  <body id="main">
+    <div id="notifications"></div>
+    <div id="weather-container">
+      <h2>Weather App <i class="fa-solid fa-bolt"></i></h2>
+      <input type="text" id="city" placeholder="Enter city name" />
+      <button onclick="getWeather()" id="search-button">
+        <i class="fa-solid fa-magnifying-glass-location"></i>
+      </button>
+      <img id="weather-icon" alt="Weather Icon" />
+      <div id="temp-div"></div>
+      <div id="icondiv"></div>
+      <div id="weather-info"></div>
+    </div>
+    <div id="geobutton">
+      <button id="location-button">
+        <i class="fa-solid fa-location-dot"></i> Location
+      </button>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
+  <script
+    src="https://kit.fontawesome.com/55c8767a80.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./main.js"></script>
+  <script>
+    VANTA.CLOUDS({
+      el: "#main",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.0,
+      minWidth: 200.0,
+      skyColor: 0x227998,
+      cloudColor: 0x8e9aac,
+      sunGlareColor: 0xbd5f41,
+      sunlightColor: 0xf7a250,
+      speed: 0.8,
+    });
+  </script>
+</html>
