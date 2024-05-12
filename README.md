@@ -55,4 +55,6 @@ To start the app, use live server or simply open index.html
 ## Background & Icons
 
 Background:https://www.vantajs.com/
-Icons: icons8,fontawesome
+
+Icons: 1. icons8
+       2. fontawesome
